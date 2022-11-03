@@ -3,5 +3,6 @@ This repo contains the projects made during the differents path of The Odin Proj
 
 ## PATHS:
 
-#1 Foundations
+- # Foundations
 
+- # Node
