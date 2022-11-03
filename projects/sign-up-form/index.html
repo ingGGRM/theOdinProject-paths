@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ingGGRM - Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img id="logo" src="./images/logo.png" alt="ingGGRM Logo Image">
+        <div id="container">
+            <div id="head"><span>The Odin Project</span><span>NodeJS Learning Path</span><span>SignUp Form:</span></div>
+            <div>
+                <form id="form" action="http://httpbin.org/post" method="post">
+                    <label for="first-name"> First Name*:
+                        <input type="text" name="first-name" id="first-name" required>
+                    </label>
+                    <label for="last-name"> Last Name*:
+                        <input type="text" name="last-name" id="last-name" required>
+                    </label>
+                    <label for="email"> Email*:
+                        <input type="email" name="email" id="email" required>
+                    </label>
+                    <label for="password"> Password*:
+                        <input type="password" name="password" id="password" required>
+                    </label>
+                    <label for="phone"> Phone Number:
+                        <input type="tel" name="phone" id="phone">
+                    </label>
+                </form>
+            </div>
+            <div id="foot">
+                <button form="form" type="reset">Clear</button>
+                <button form="form" type="submit">Sign Up</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

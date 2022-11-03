@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/splash.jpg);
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#logo {width: 60%; margin: auto; margin-top: 15%; border-radius: 50%;}
+
+#container {
+    display: grid;
+    height: calc(100vh - 20px);
+    grid-template-rows: 2fr 3fr 1fr;
+    background: linear-gradient(to bottom, white, black);
+    opacity: 0.8;
+    border-radius: 10px;
+    grid-row-gap: 5%;
+    width: max(30%, 600px, 70%);
+    margin-top: 10px;
+    margin-bottom: auto;
+}
+
+#head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: navy;
+}
+
+#head > :nth-child(1) {margin-top: auto; font-size: 3rem; font-weight: bold;}
+#head > :nth-child(2) {font-size: 2rem; font-weight: bold;}
+#head > :nth-child(3) {
+    font-size: 1.8rem;;
+    margin-bottom: 1px;
+    margin-top: auto;
+    margin-left: 10px;
+    text-align: left;
+    text-decoration: underline;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#form>label {
+    border: 1px solid red;
+    flex: 1;
+    line-height: 2em;
+    font-size: 2em;
+}
+
+#form > label > input {
+    height: 2em;
+    width: 50%;
+}

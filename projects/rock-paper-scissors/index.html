@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Rock, Paper and Scissors</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body onload="init()">
+    <div id="container">
+        <div class="header">
+            <div class="title">
+                <h1 class="main-title">ROCK - PAPER - SCISSORS</h1>
+                <h4 class="main-subtitle">THE GAME</h4>
+            </div>
+            <div>
+                <div class="score">
+                    <span class="score-cpu">CPU: <span class="score-value">- 0 -</span></span>
+                    <span class="score-user">USER: <span class="score-value">- 0 -</span></span>
+                </div>
+                <button class="start-end">Start Match</button>
+            </div>
+        </div>
+        
+        <div class="user-panel">
+            <div class="hidden user-buttons">
+                <button>ROCK</button>
+                <button>PAPER</button>
+                <button>SCISSORS</button>
+            </div>
+            <div class="vs">
+                <div>USER</div>
+                <img src="./vs.png" alt="vs image" height="100px" width="100px">
+                <div>CPU</div>
+            </div>
+            <div id="result">
+                <img class="hidden" src="./winner.jpg" alt="winner" height="100px" width="auto" style="border-radius: 10px;">
+                <img class="hidden" src="./looser.png" alt="looser" height="150px" width="auto" style="transform: rotate(9.5deg); border-radius: 10px;">
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript" src="./script.js"></script>
+</html>

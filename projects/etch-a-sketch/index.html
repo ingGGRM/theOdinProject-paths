@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body onload="init()" ondragstart="return false;" ondrop="return false;">
+    <div id="container">
+        <div id="header">Etch-A-Sketch</div>
+        <div id="content">
+            <div id="control-panel">
+                <div>
+                    <input id="color-picker" type="color">
+                    <div class="control-set">
+                        <input id="eraser" type="checkbox">
+                        <label for="eraser">Eraser</label>
+                    </div>
+                    <div class="control-set">
+                        <input id="rainbow" type="checkbox" name="rainbow">
+                        <label for="rainbow">Rainbow</label>
+                    </div>
+                    <div class="control-set">
+                        <input id="show-grid" type="checkbox" checked="true" name="grid">
+                        <label for="grid">Grid</label>
+                    </div>
+                </div>
+                <div>
+                    <div id="size">
+                        <h4><span>16</span>x<span>16</span></h4>
+                        <input onchange="changeSize()" id="grid-size" name="size" type="range" value="16" min="16" max="64" step="1">
+                    </div>
+                    <button id="clear-grid">CLEAR</button>
+                </div>
+            </div>
+
+            <div id="grid-container"></div>
+        </div>
+        <div id="footer">ingGGRM - The Odin Project - 2022</div>
+    </div>
+</body>
+<script type="text/javascript" src="./script.js"></script>
+</html>
